@@ -6,9 +6,9 @@ import App from './App.jsx'
 
 import './index.css'
 
+import AboutMePage from './pages/AboutMePage.jsx';
 import ContactPage from './pages/ContactPage.jsx';
 import ErrorPage from './pages/ErrorPage.jsx';
-import HomePage from './pages/HomePage.jsx';
 import PortfolioPage from './pages/PortfolioPage.jsx';
 import ResumePage from './pages/ResumePage.jsx';
 
@@ -20,7 +20,7 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <HomePage />,
+        element: <AboutMePage />,
       },
       {
         path: '/Contact',
