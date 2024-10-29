@@ -1,5 +1,5 @@
 
-export default function Content(props) {
+export default function TemplatePage(props) {
     return (
         <div className="
             py-[16.67vh]
