@@ -4,7 +4,7 @@ export default function NavBar() {
     const currentPage = useLocation().pathname;
     return (
         <header className="
-            h-1/6 max-h-20 w-full 
+            h-20 w-full 
             bg-header bg-cover
             fixed top-0
         ">
@@ -18,7 +18,7 @@ export default function NavBar() {
                         'nav-link h-12 w-16 bg-black text-white active' : 
                         'nav-link h-12 w-16 bg-black text-white' }
                 >
-                    Home
+                    About Me
                 </Link>
 
                 <Link

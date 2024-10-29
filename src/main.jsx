@@ -4,7 +4,7 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import App from './App.jsx'
 
-import './index.css'
+import './styles/tailwind.css'
 
 import AboutMePage from './pages/AboutMePage.jsx';
 import ContactPage from './pages/ContactPage.jsx';
