@@ -22,21 +22,21 @@ export default function NavBar() {
                 </Link>
 
                 <Link
-                    to='/Contact'
-                    className = { currentPage === '/Contact' ? 
-                        'nav-link h-12 w-16 bg-black text-white active' : 
-                        'nav-link h-12 w-16 bg-black text-white' }
-                >
-                    Contact
-                </Link>
-
-                <Link
                     to='/Portfolio'
                     className = { currentPage === '/Portfolio' ? 
                         'nav-link h-12 w-16 bg-black text-white active' : 
                         'nav-link h-12 w-16 bg-black text-white' }
                 >
                     Portfolio
+                </Link>
+
+                <Link
+                    to='/Contact'
+                    className = { currentPage === '/Contact' ? 
+                        'nav-link h-12 w-16 bg-black text-white active' : 
+                        'nav-link h-12 w-16 bg-black text-white' }
+                >
+                    Contact
                 </Link>
 
                 <Link
