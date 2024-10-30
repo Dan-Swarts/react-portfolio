@@ -1,5 +1,5 @@
 import '../styles/aboutMePage.css';
-import profile from '../assets/images/headshot.jpg';
+import profile from '../../public/assets/images/headshot.jpg';
 
 export default function AboutMePage(){
 
