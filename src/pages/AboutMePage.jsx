@@ -1,5 +1,4 @@
 import '../styles/aboutMePage.css';
-import profile from '../../public/assets/images/headshot.jpg';
 
 export default function AboutMePage(){
 
@@ -13,7 +12,7 @@ export default function AboutMePage(){
 
             <h1 className='text-4xl'>About Me</h1>
 
-            <img src={profile} alt="Daniel's Headshot Photo" className="h-64 rounded-full" />
+            <img src="assets/images/headshot.jpg" alt="Daniel's Headshot Photo" className="h-64 rounded-full" />
 
             <p className='aboutMeParagraph'> 
                 I'm a dedicated AI trainer with a strong foundation in computer science 

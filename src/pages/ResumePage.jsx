@@ -1,5 +1,3 @@
-import resume from '../../public/assets/Resume.pdf';
-
 export default function ResumePage(){
 
     return (
@@ -9,7 +7,7 @@ export default function ResumePage(){
             bg-blue-300
             min-h-[100vh]
         ">
-            <a href={resume} download>
+            <a href="/assets/Resume.pdf" download>
                 <button>
                     Download Resume
                 </button>

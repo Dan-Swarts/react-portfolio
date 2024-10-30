@@ -1,5 +1,5 @@
 import ProjectCard from "../components/ProjectCard";
-import projects from "../../public/assets/projects";
+import projects from "../data/projects.js";
 
 export default function PortfolioPage(){
     
