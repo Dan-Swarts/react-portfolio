@@ -8,7 +8,7 @@ const projects = [
         description: "",
         title: 'ReadMe Generator',
         subtitle: 'Generate high-quality README.md files effortlessly',
-        link: 'https://github.com/Dan-Swarts?tab=repositories',
+        link: 'https://github.com/Dan-Swarts/README_Generator',
     },
     {
         image: weatherForecast,
