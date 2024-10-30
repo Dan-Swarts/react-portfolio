@@ -12,6 +12,10 @@ export default function NavBar() {
             <nav className="flex justify-around py-4">
                 <h1 className="text-2xl text-cyan-50">Daniel Swarts</h1>
 
+                <img src="assets/images/background1.png" alt="" 
+                    className='w-10 h-10'
+                />
+
                 <NavButton page='/' text='About me' />
                 <NavButton page='/Portfolio' text='Portfolio' />
                 <NavButton page='/Contact' text='Contact me' />
