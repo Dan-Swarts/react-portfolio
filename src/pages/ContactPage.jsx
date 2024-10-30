@@ -66,9 +66,9 @@ export default function ContactPage(){
                 <button type="submit" value="submit">Submit</button>
             </form>
 
-            <div>
+            <p className="text-left text-red-700">
                 {error}
-            </div>
+            </p>
         </main>
     );
 };

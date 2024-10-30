@@ -1,19 +1,26 @@
-import project1 from './images/project1.png';
-import project2 from './images/project2.png';
-import project3 from './images/project3.png';
+import readme from './images/readme.png';
+import weatherForecast from './images/weatherForecast.png';
+import flexBoard from './images/flexBoard.png';
 
 const projects = [
     {
-        image: project1,
-        nothing: 'something',
+        image: readme,
+        description: "",
+        title: 'ReadMe Generator',
+        subtitle: 'Generate high-quality README.md files effortlessly',
+        link: 'https://github.com/Dan-Swarts?tab=repositories',
     },
     {
-        image: project2,
-        nothing: 'something',
+        image: weatherForecast,
+        title: 'Weather Forecast',
+        subtitle: 'Shows you a weather forcast for your city in real time!',
+        link: 'https://github.com/Dan-Swarts/weather-forecast',
     },
     {
-        image: project3,
-        nothing: 'something',
+        image: flexBoard,
+        title: 'Flex Board',
+        subtitle: 'Create your own chess board',
+        link: 'https://github.com/RainesArt/AlarmBoard',
     },
 ];
 

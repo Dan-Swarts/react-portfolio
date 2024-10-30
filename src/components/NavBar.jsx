@@ -1,52 +1,22 @@
-import { Link, useLocation } from 'react-router-dom'
+import NavButton from './NavButton';
+
 
 export default function NavBar() {
-    const currentPage = useLocation().pathname;
     return (
         <header className="
             h-20 w-full 
             bg-header bg-cover
-            fixed top-0
+            fixed top-0 z-50
         ">
 
             <nav className="flex justify-around py-4">
                 <h1 className="text-2xl text-cyan-50">Daniel Swarts</h1>
 
-                <Link
-                    to='/'
-                    className = { currentPage === '/' ? 
-                        'nav-link h-12 w-16 bg-black text-white active' : 
-                        'nav-link h-12 w-16 bg-black text-white' }
-                >
-                    About Me
-                </Link>
+                <NavButton page='/' text='About me' />
+                <NavButton page='/Portfolio' text='Portfolio' />
+                <NavButton page='/Contact' text='Contact me' />
+                <NavButton page='/Resume' text='Resume' />
 
-                <Link
-                    to='/Portfolio'
-                    className = { currentPage === '/Portfolio' ? 
-                        'nav-link h-12 w-16 bg-black text-white active' : 
-                        'nav-link h-12 w-16 bg-black text-white' }
-                >
-                    Portfolio
-                </Link>
-
-                <Link
-                    to='/Contact'
-                    className = { currentPage === '/Contact' ? 
-                        'nav-link h-12 w-16 bg-black text-white active' : 
-                        'nav-link h-12 w-16 bg-black text-white' }
-                >
-                    Contact
-                </Link>
-
-                <Link
-                    to='/Resume'
-                    className = { currentPage === '/Resume' ? 
-                        'nav-link h-12 w-16 bg-black text-white active' : 
-                        'nav-link h-12 w-16 bg-black text-white' }
-                >
-                    Resume
-                </Link>
             </nav>
         </header>
     );

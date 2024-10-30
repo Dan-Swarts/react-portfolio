@@ -1,5 +1,5 @@
 import '../styles/aboutMePage.css';
-import profile from '../assets/images/profilePic.png';
+import profile from '../assets/images/headshot.jpg';
 
 export default function AboutMePage(){
 
@@ -13,34 +13,33 @@ export default function AboutMePage(){
 
             <h1 className='text-4xl'>About Me</h1>
 
-            <img src={profile} alt="Daniel's Headshot Photo" />
+            <img src={profile} alt="Daniel's Headshot Photo" className="h-64 rounded-full" />
 
-            <p> 
-                Hello! I’m [Your Name], a passionate [Your Profession or Role] based in 
-                [Your Location]. With a strong background in [Your Field or Relevant 
-                Experience], I specialize in [Your Area of Expertise or Niche] and have 
-                a keen interest in [Related Interests or Hobbies].
-            </p>
+            <p className='aboutMeParagraph'> 
+                I'm a dedicated AI trainer with a strong foundation in computer science 
+                and a passion for cutting-edge web and AI technologies. I hold a 
+                Bachelor of Science in Computer Science from the University of 
+                Minnesota, where I also deepened my knowledge in artificial 
+                intelligence and its applications. Additionally, I pursued 
+                comprehensive training in full-stack development at Northwestern 
+                University, equipping me with the skills needed to build and manage 
+                robust, scalable applications.
+            </p> <br />
 
-            <p>
-                I graduated from [Your University or Educational Background] with a 
-                degree in [Your Degree], and since then, I've dedicated my career to 
-                [Your Professional Focus or Goal]. My journey has allowed me to work on 
-                projects like [Example of a Key Project or Experience] and collaborate 
-                with incredible teams to bring innovative ideas to life.
+            <p className='aboutMeParagraph'>
+                In my professional role at DataAnnotations, I work as an AI trainer, 
+                leveraging prompt engineering techniques to optimize AI interactions and 
+                improve model performance. My technical toolkit includes proficiency in 
+                TypeScript, React, Vite, and Tailwind CSS, enabling me to create efficient,
+                high-quality web applications with modern frameworks and tools.
+            </p> <br />
+            
+            <p className='aboutMeParagraph'>
+                Through my academic and professional experiences, I've honed a blend of 
+                technical and collaborative skills, always focused on delivering innovative 
+                and impactful solutions.
             </p>
             
-            <p>
-                In my free time, I enjoy [List 1-2 Hobbies or Interests that add 
-                personality]. I’m also an avid learner, constantly looking to expand my 
-                knowledge in [Field of Ongoing Study or Interest].
-            </p>
-
-            <p>
-                Feel free to connect with me—I’m always open to discussing [Relevant 
-                Topics] or exploring new collaborations!
-            </p>
-
         </main>
     );
 };

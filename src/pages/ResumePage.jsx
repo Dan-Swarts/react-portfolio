@@ -1,4 +1,3 @@
-import TemplatePage from "./TemplatePage";
 import resume from '../assets/resume.txt';
 
 export default function ResumePage(){
