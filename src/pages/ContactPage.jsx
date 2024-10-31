@@ -17,13 +17,34 @@ export default function ContactPage(){
         }
 
         if(!lintEmail(email)){
-            return setError("please enter a valid email adress");
+            return setError("please enter a valid email address.");
         }
 
         handleSucess(name,email,message);
     };
 
-    
+    const handleClickOffTextInput = (event) => {
+        const name = event.target.value;
+        !name ? setError('Name is required.') : setError('');
+    }
+
+    const handleClickOffEmailInput = (event) => {
+        const email = event.target.value;
+
+        if(!email){
+            setError('Email is required.');
+        } else if(!lintEmail(email)){
+            setError('please enter a valid email address.');
+        } else {
+            setError('');
+        }
+    }
+
+    const handleClickOffMessageInput = (event) => {
+        const message = event.target.value;
+        !message ? setError('Message is required.') : setError('');
+    }
+
     const lintEmail = (email) => {
         const emailRegex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         return emailRegex.test(email);
@@ -48,19 +69,22 @@ export default function ContactPage(){
                 <label htmlFor="">Name:</label><br />
                 <input
                     type="text" 
-                    className="name" 
+                    className="name"
+                    onBlur={handleClickOffTextInput}
                 /><br />
 
                 <label htmlFor="">Email Address:</label><br />
                 <input 
                     type="text" 
                     className="email" 
+                    onBlur={handleClickOffEmailInput}
                 /><br />
 
                 <label htmlFor="">Message:</label><br />
                 <input 
                     type="text"
                     className="message"
+                    onBlur={handleClickOffMessageInput}
                 /><br />
 
                 <button type="submit" value="submit">Submit</button>
