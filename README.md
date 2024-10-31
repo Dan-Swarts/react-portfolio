@@ -38,7 +38,7 @@ npm run preview
 
 ### Access Projects in my Portfolio
 
-![Add a screenshot](public\assets\gifs\portfolio.gif)
+![Add a screenshot](/public/assets/gifs/portfolio.gif)
 
 <br />
 <br />
@@ -51,7 +51,7 @@ npm run preview
 
 ### Send Me a Message!
 
-![Add a screenshot](public\assets\gifs\messageForm.gif)
+![Add a screenshot](/public/assets/gifs/messageForm.gif)
 
 <br />
 <br />
@@ -64,7 +64,7 @@ npm run preview
 
 ### Check out my GitHub, LinkedIn, and StackOverflow
 
-![Add a screenshot](public\assets\gifs\links.gif)
+![Add a screenshot](/public/assets/gifs/links.gif)
 
 <br />
 <br />
@@ -77,4 +77,4 @@ npm run preview
 
 ### Download my Resume
 
-![Add a screenshot](public\assets\gifs\downloadResume.gif)
+![Add a screenshot](/public/assets/gifs/downloadResume.gif)
